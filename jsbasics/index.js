@@ -38,3 +38,23 @@ for(var i = 0; i < arr.length; i++) {
 }
 const avg = sum / arr.length;
 console.log(avg);
+
+const ob = {
+    name: 'Daksh',
+    age: 20,
+    arr: [1,2,3]
+}
+ob.name = 'Sri';
+console.log(ob['name']);
+
+const myObj = () => {
+    return (
+        {name: 'Hey',
+        age: 20}
+    )
+}
+//Destructuring an object
+const {name, age} = ob;
+
+console.log(myObj);
+console.log(name);
